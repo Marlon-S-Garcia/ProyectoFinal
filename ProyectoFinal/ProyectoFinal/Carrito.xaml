@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.Carrito">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Mi carrito" TextColor="AliceBlue" FontSize="Medium"/>
+
+            <ListView x:Name="MyListView" ItemSelected="MyListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label x:Name="lblcantidad" Text="{Binding cantidad}"/>
+                                <Label x:Name="lblproducto" Text="{Binding nombreProducto}"/>
+                                <Label x:Name="lbltotal" Text="{Binding valorTotal}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+            </Grid>
+            <Label Text="Mi carrito"  Grid.Row="0" Grid.Column="0" FontSize="Medium"/>
+            <Button x:Name="bntComprar" Text="Realizar la compra" Grid.Row="0" Grid.Column="0" Clicked="bntComprar_Clicked" />
+            <Button x:Name="btnEliminar" Text="Eliminar Item" Grid.Row="0" Grid.Column="2" Clicked="btnEliminar_Clicked" />
+            <Button x:Name="btnCancelar" Text="Cancelar compra" Grid.Row="1" Grid.Column="1" Clicked="btnCancelar_Clicked" />
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

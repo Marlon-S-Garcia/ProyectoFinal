@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.Menu">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Grid>
+                
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+            </Grid>
+            <Label Text="Mi carrito"  Grid.Row="0" Grid.Column="0" FontSize="Medium"/>
+            <Button x:Name="btnCarrito" Text="Visualizar mi carrito" Grid.Row="1" Grid.Column="1" Clicked="btnCarrito_Clicked" />
+            
+            <Label Text="Mi nueva compra"  Grid.Row="3" Grid.Column="0" FontSize="Medium"/>
+            <Button x:Name="btnCompra" Text="Realizar nueva compra" Grid.Row="4" Grid.Column="1" Clicked="btnCompra_Clicked"/>
+            
+            <Label Text="Mis compras anteriores"  Grid.Row="6" Grid.Column="0" FontSize="Medium"/>
+            <Button x:Name="btnAnteriores" Text="Visualizar compras anterioes" Grid.Row="7" Grid.Column="1" Clicked="btnAnteriores_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

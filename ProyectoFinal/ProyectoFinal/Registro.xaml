@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Entry x:Name="txtNombre" Placeholder="Ingerese el nombre"/>
+            <Entry x:Name="txtCorreo" Placeholder="Ingerese el correo"/>
+            <Entry x:Name="txtTelefono" Placeholder="Ingerese el número de contacto" />
+            <Entry x:Name="txtDirección" Placeholder="Ingerese la dirección"/>
+            
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario"/>
+            <Entry x:Name="txtContrasenia" Placeholder="Ingrese la contraseña" IsPassword="True"/>
+            <Button x:Name="btnAgregar" Text="Agregar" Clicked="btnAgregar_Clicked"/>
+         </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

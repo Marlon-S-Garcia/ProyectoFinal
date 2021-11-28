@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.Compra">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="txtNombreProducto" Placeholder="Nombre del producto"/>
+            <Entry x:Name="txtCantidad" Placeholder="Ingerese la cantidad" Keyboard="Numeric"/>
+            <Entry x:Name="txtValor" Placeholder="Ingerese el precio" Keyboard="Numeric" />
+            <Entry x:Name="txtValorPago" IsEnabled="True"/>
+
+            <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"/>
+            <Button x:Name="btnAgregar" Text="Agregar" Clicked="btnAgregar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
